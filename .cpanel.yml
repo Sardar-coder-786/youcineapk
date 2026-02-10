@@ -1,20 +1,20 @@
-# ---
-# deployment:
-#   tasks:
-#     - export DEPLOYPATH=/home/youcineapks/public_html/github.youcineapk.app
-#     - /bin/cp * $DEPLOYPATH
-
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/youcineapks/public_html/app/github.youcineapk.app
-    - /bin/echo "Deploying to: $DEPLOYPATH"
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/echo "Installing..."
-    - npm ci || npm install
-    - /bin/echo "Building..."
-    - npm run build
-    - /bin/echo "Cleaning old files..."
-    - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/echo "Copying new build..."
-    - /bin/cp -R out/* $DEPLOYPATH
-    - /bin/echo "Done!"
+    - export DEPLOYPATH=/home/youcineapks/public_html/
+    - /bin/cp * $DEPLOYPATH
+
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/youcineapks/public_html/app/github.youcineapk.app
+#     - /bin/echo "Deploying to: $DEPLOYPATH"
+#     - /bin/mkdir -p $DEPLOYPATH
+#     - /bin/echo "Installing..."
+#     - npm ci || npm install
+#     - /bin/echo "Building..."
+#     - npm run build
+#     - /bin/echo "Cleaning old files..."
+#     - /bin/rm -rf $DEPLOYPATH/*
+#     - /bin/echo "Copying new build..."
+#     - /bin/cp -R out/* $DEPLOYPATH
+#     - /bin/echo "Done!"
