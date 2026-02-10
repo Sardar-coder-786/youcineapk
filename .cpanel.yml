@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/youcineapks/public_html/
+    - export DEPLOYPATH=/home/youcineapks/public_html/github.youcineapk.app
     - /bin/cp * $DEPLOYPATH
