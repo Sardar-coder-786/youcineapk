@@ -12,7 +12,6 @@ export default function Home() {
       qua: "Quais dispositivos podem rodar o YouCine APK sem problemas?",
       ans: "Compatível com celulares Android, tablets, Android TV, Smart TVs com Android e outros dispositivos baseados em Android."
     },
-    
     {
       qua: "É gratuito assistir filmes e séries no aplicativo YouCine?",
       ans: "Sim, o app é usado como plataforma de streaming gratuito (a fonte/segurança depende do local de download)."
